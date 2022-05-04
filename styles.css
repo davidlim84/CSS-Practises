@@ -1,23 +1,26 @@
-.box {
-    border: 4px solid lightgray;
-    width: 100px;
-    height: 100px;
+* {
+    box-sizing: border-box;
 }
 
-.box-small {
-    width: 60px;
-    height: 60px;
-    margin-left: 24px;
+.box {
+    border: 4px solid lightgray;
+    width: calc(100% / 3);
+    height: 100px;
 }
 
 .container {
     border:  4px solid lightgray;
-    display: flex;
-    justify-content: space-between;
     padding: 24px;
 }
 
+.title {
+    border: 2px solid lightgray;
+    width: 100%;
+    height: 24px;
+    margin-bottom: 24px;
+}
+
 .box-wrapper {
-    align-items: center;
     display: flex;
+    flex-wrap: wrap;
 }
